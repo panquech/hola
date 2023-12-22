@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color:rgb(0, 0, 0);
+}
+
+.container{
+    background-color: black;
+}
+
+.card{
+    border: none;
+}
+
+h1{
+    color:rgb(205, 221, 235);
+    text-align: center;
+}
+
+.float{
+    object-position: center;
+    background-color: rgb(145, 118, 90);
+    width:90%;
+    margin:auto;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px;
+    border-radius: 10px;
+}

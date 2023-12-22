@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(53, 42, 33);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color:rgb(111, 73, 39);
+}
+
+.container{
+    background-color: black;
+}
+
+.card{
+    border: none;
+}

@@ -1,0 +1,37 @@
+links que ayudan a solucionar problemas de:
+ 
+- permisos
+- rutas
+- extensiones
+
+primero vamos a crear una carpeta en un lugar facil de acceder
+C:\temp
+
+y en el archivo php.ini incluiremos esta linea:
+upload_tmp_dir="C:\temp"
+
+
+cambiar permisos de un directorio windows
+
+ icacls C:\directorio /grant Everyone:F /t
+
+
+
+
+los archivos no son accesibles
+
+I had the same problem. I did a move_uploaded_file() to a folder I knew IIS users have writing permissions. By default my PHP.ini is using c:\windows\temp and even if I gave writing permissions to IIS users it wasn't working.
+
+---------https://stackoverflow.com/questions/6034048/php-ini-setting-upload-tmp-dir
+
+archivos php
+https://www.mauriciodeveloper.com/post/tutorial-subir-archivos-con-php-549#:~:text=Tutorial%3A%20Subir%20archivos%20con%20PHP%201%20Configurar%20el,...%204%20Prueba%20de%20carga%20de%20archivos%20
+https://code.tutsplus.com/es/how-to-upload-a-file-in-php-with-example--cms-31763t
+https://www.srcodigofuente.es/aprender-php/subir-imagenes-html-php
+
+para habilitar las extensiones necesaria para la interaccion de php y mysql es necesario espceficiar la ruta de las extensiones, por ejemplo:
+
+extension_dir="C:\\php-8.3.0\\ext"
+
+ademas es necesario uncomment las extensiones, se hace quitando el ";" al inico del renglón.
+
